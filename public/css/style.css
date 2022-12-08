@@ -148,7 +148,15 @@ div.contents > div.user-name {
   cursor: pointer;
 }
 
-div.contents > div.user-email {
+#ND {
+  cursor: pointer;
+}
+
+#EM {
+  cursor: pointer;
+}
+
+div.contents > div.user-Info {
   width: 329px;
   height: 18px;
   margin-left: 50px;
