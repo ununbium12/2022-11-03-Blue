@@ -144,6 +144,10 @@ div.contents > div.user-name {
   color: #000000;
 }
 
+#name {
+  cursor: pointer;
+}
+
 div.contents > div.user-email {
   width: 329px;
   height: 18px;
