@@ -1,0 +1,26 @@
+{
+  "name": "2022-11-03-blue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ununbium12/2022-11-03-Blue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ununbium12/2022-11-03-Blue/issues"
+  },
+  "homepage": "https://github.com/ununbium12/2022-11-03-Blue#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.45.1",
+    "@typescript-eslint/parser": "^5.45.1",
+    "eslint": "^8.29.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-vue": "^9.8.0"
+  }
+}
