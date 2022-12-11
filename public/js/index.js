@@ -51,7 +51,7 @@ userNameBtr.onclick = () => {
 userInFoNDBtr.onclick = () => {
   const userInFoND = prompt('학번을 입력해 주십시오');
   const number = /[0~9]/;
-  if (userInFoND == number) {
+  if (userInFoND != number) {
     localStorage.setItem('userInFoND', userInFoND);
     setUserInformationNDInnerHtml(userInFoND);
   } else if (userInFoND == null) {
@@ -64,7 +64,7 @@ userInFoNDBtr.onclick = () => {
 userInFoEmBtr.onclick = () => {
   const userInFoEM = prompt('이메일을 입력해 주십시오');
   const email = /^[\w]{4,}@[\w]+(\.[\w]+){1,3}$/;
-  if (userInFoEM == email) {
+  if (userInFoEM != email) {
     localStorage.setItem('userInFoEM', userInFoEM);
     setUserInformationEMInnerHtml(userInFoEM);
   } else if (userInFoEM == null) {
