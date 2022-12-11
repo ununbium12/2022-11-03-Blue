@@ -50,25 +50,25 @@ userNameBtr.onclick = () => {
 
 userInFoNDBtr.onclick = () => {
   const userInFoND = prompt('학번을 입력해 주십시오');
-  const number = /[0~9]/;
-  if (userInFoND != number) {
+  const number = /^[0-9]*$/;
+  if(userInFoND == "") {
+    alert('입력 공란');
+  } else if (number.test(userInFoND)) {
     localStorage.setItem('userInFoND', userInFoND);
     setUserInformationNDInnerHtml(userInFoND);
-  } else if (userInFoND == null) {
-    alert('입력 공란');
   } else {
-    alert('숫자만 입력');
+    alert('숫자만 입력할 수 있습니다.')
   }
 };
 
 userInFoEmBtr.onclick = () => {
   const userInFoEM = prompt('이메일을 입력해 주십시오');
-  const email = /^[\w]{4,}@[\w]+(\.[\w]+){1,3}$/;
-  if (userInFoEM != email) {
+  const email = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
+  if (userInFoEM == "") {
+    alert('입력 공란');
+  } else if (email.test(userInFoEM)) {
     localStorage.setItem('userInFoEM', userInFoEM);
     setUserInformationEMInnerHtml(userInFoEM);
-  } else if (userInFoEM == null) {
-    alert('입력 공란');
   } else {
     alert('이메일 양식에 맞춰 입력');
   }
